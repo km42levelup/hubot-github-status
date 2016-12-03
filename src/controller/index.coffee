@@ -8,7 +8,9 @@ moment = require 'moment'
 
 githubMessageParser = (json) ->
   """#{moment(json['created_on']).fromNow()}
-  Status: #{json['status']}\nMessage: #{formatString(json['body'])}\n"""
+  Status: #{json['status']}
+  Message: #{formatString(json['body'])}
+  """
 
 status = (msg) ->
   msg.http(URL_STATUS)

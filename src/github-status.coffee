@@ -5,9 +5,9 @@
 #
 #
 # Commands:
-#   hubot github status - <what the respond trigger does>
-#   hubot github last message - <what the respond trigger does>
-#   hubot github messages - <what the respond trigger does>
+#   hubot github status - return the current status
+#   hubot github last message - return the last status message
+#   hubot github messages - return all the status messages
 #   orly - <what the hear trigger does>
 #
 # Notes:

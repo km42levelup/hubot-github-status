@@ -12,11 +12,12 @@ describe 'github-status', ->
   afterEach ->
     @room.destroy()
 
-  it 'responds to hello', ->
-    @room.user.say('alice', '@hubot hello').then =>
+  it 'responds to github status', ->
+    @room.user.say('alice', '@hubot github status').then =>
+      console.log(@room.messages)
       expect(@room.messages).to.eql [
-        ['alice', '@hubot hello']
-        ['hubot', '@alice hello!']
+        ['alice', '@hubot github status']
+        ['hubot', '@alice ']
       ]
 
   it 'hears orly', ->
