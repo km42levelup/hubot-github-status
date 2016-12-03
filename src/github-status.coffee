@@ -14,7 +14,7 @@
 #   <optional notes required for the script>
 #
 # Author:
-#   Samuel Boucher <boucher.samuel.c@gmail.com>
+#   Samuel Boucher
 # Inspired by
 # voke
 
@@ -23,8 +23,6 @@ controller = require './controller'
 
 module.exports = (robot) ->
   robot.respond routes.STATUS, controller.status
-
-  robot.respond routes.LAST_STATUS, controller.last_status
-
+  robot.respond routes.LAST_MESSAGE, controller.last_message
   robot.respond routes.MESSAGES, controller.messages
 

@@ -38,7 +38,7 @@ lastMessage = (msg) ->
       else
         msg.send "Error: #{err}"
 
-statusMessages = (msg) ->
+messages = (msg) ->
   msg.http(URL_MESSAGES)
     .get() (err, res, body) ->
       jsonArray = JSON.parse(body)
@@ -49,5 +49,5 @@ statusMessages = (msg) ->
 
 module.exports =
   status: status
-  last_status: lastMessage
-  messages: statusMessages
+  last_message: lastMessage
+  messages: messages
