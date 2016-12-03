@@ -1,0 +1,10 @@
+-   repo: git://github.com/pre-commit/pre-commit-hooks
+    sha: 'v0.6.1'  # Use the sha you want to point at
+    hooks:
+    -   id: trailing-whitespace
+
+-   repo: git://github.com/pre-commit/mirrors-coffeelint
+    sha: 'v1.15.7'  # Use the sha you want to point at
+    hooks:
+    -   id: coffeelint
+        files: \.(coffee)$
