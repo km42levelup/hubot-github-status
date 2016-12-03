@@ -7,10 +7,10 @@
   "keywords": "hubot, hubot-scripts, github, status",
   "repository": {
     "type": "git",
-    "url": "git://github.com/hubot-scripts/hubot-github-status.git"
+    "url": "git://github.com/scboucher/hubot-github-status.git"
   },
   "bugs": {
-    "url": "https://github.com/hubot-scripts/hubot-github-status/issues"
+    "url": "https://github.com/scboucher/hubot-github-status/issues"
   },
   "dependencies": {
     "moment": "^2.17.0"
